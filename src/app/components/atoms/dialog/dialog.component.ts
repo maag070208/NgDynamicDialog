@@ -38,11 +38,15 @@ export class DialogComponent implements OnDestroy, AfterViewInit {
   ) {}
 
   ngAfterViewInit() {
+    //create component dynamically
     this.componentRef = this.vcRef.createComponent(this.data.component);
+    //pass some data to component
     this.componentRef.instance.initComponent({ ...this.data.data });
+    //subscribe to the event emitter of component
     this.componentRef.instance.onSubmit.subscribe((data: any) => {
       this.dialogRef.close(data);
     });
+    //detect changes
     this.cdref.detectChanges();
   }
 

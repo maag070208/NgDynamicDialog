@@ -7,7 +7,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { DynamicDialogComponent } from 'src/app/core/models/form-dialog';
+import { DynamicDialogComponent } from 'src/app/core/models/dialog';
 import { IUser } from 'src/app/core/models/user';
 import { MatButtonModule } from '@angular/material/button';
 

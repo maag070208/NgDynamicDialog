@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DynamicDialogComponent } from 'src/app/core/models/form-dialog';
+import { DynamicDialogComponent } from 'src/app/core/models/dialog';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
