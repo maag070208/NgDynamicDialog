@@ -1,6 +1,10 @@
 {
   "name": "dynamic-dialog",
-  "version": "0.0.0",
+  "author": {
+    "name": "maag",
+    "email": "maag070208@gmai.com"
+  },
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
