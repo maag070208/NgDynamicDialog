@@ -1,0 +1,25 @@
+<form [formGroup]="form1" class="flex flex-column m-5">
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" placeholder="maag" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Phone</mat-label>
+    <input matInput formControlName="phone" placeholder="1231231231" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" placeholder="maag@gmail.com" />
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    [disabled]="form1.invalid"
+    (click)="onSubmit.emit(form1.value)"
+  >
+    Submit
+  </button>
+</form>

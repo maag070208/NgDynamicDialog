@@ -1,0 +1,16 @@
+<section class="flex flex-column">
+    <p class="text-center">Are you shure to delete this register?</p>
+  
+    <div class="flex justify-content-between">
+      <button  mat-raised-button 
+      color="warn"
+      (click)="onSubmit.emit(true)">Delete</button>
+      <button  mat-raised-button 
+      color="accent"
+      (click)="onSubmit.emit(false)">
+        Cancel
+      </button>
+
+    </div>
+  </section>
+  
